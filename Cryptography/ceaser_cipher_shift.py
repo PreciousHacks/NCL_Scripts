@@ -2,7 +2,7 @@ import sys
 
 input_str = " ".join(sys.argv[1:])
 
-if input_str:
+if not input_str:
     input_str = input("Enter the cipher string: ")
 
 
@@ -28,8 +28,7 @@ def ceaser_shift(input_str: str, shift):
     return result
 
 
+print(f"Input: {input_str}")
 for i in range(1, 26):
-    print(i)
-
-print(input_str)
-print(ceaser_shift(input_str, 13))
+    print()
+    print(f"{i}: {ceaser_shift(input_str, i)}")
