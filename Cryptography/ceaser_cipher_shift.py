@@ -6,12 +6,12 @@ if not input_str:
     input_str = input("Enter the cipher string: ")
 
 
-def ceaser_shift(input_str: str, shift):
+def ceaser_shift(in_str: str, shift):
     if shift == 0:
-        return input_str
+        return in_str
 
     result = ""
-    for i in input_str:
+    for i in in_str:
         if not i.isalpha():
             result += i
             continue
